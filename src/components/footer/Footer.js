@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div>
         <footer>
-            &copy; Copy write 2024, All rights reserved | Designed by <span>Ekene Akubue</span>
+            &copy; Copyright 2024, All rights reserved | Designed by <span>Ekene Akubue</span>
         </footer>
     </div>
   )
