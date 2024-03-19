@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #cfcece;
+    --black: #000;
+    --grayish: #5b5959;
+    --light-gray:#777676;
+    --white: #fff;
+    --span-special: #1d05a3;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+main{
+    background-color: var(--light-gray);
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    min-height: 60vh;
+}
+
+.todo-input{
+    width: 80%;
+    padding: 0.3rem 0.8rem;
+    border: none;
+    background-color: var(--white);
+    border-radius: 10px 0px 0px 10px;
+}
+.todo-button{
+    width: 20%;
+    padding: 0.3rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 0px 10px 10px 0px;
+    transition: 1s;
+}
+.todo-button:hover{
+    background-color: var(--grayish);
+    border: 2px solid var(--white);
+}
+.edit-form{
+    margin: 2rem 0rem;
+}
+.edit-form .todo-input{
+    background-color: var(--light-gray);
+    color: var(--white);
+}
+.edit-form .todo-button{
+    background-color: var(--grayish);
+    border: 2px solid var(--white);
+    color: var(--white);
+    transition: 1s;
+}
+.edit-form .todo-button:hover{
+    background-color: var(--black);
+}
+.todo-row{
+    background-color: var(--background-color);
+    color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    margin: 1.2rem 0rem;align-items: center;
+    border-radius: 10px;
+}
+.icons{
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media(max-width:667px){
+    main{
+        width: 80%;
+        padding: 2rem;
+        min-height: 60vh;
+    }
+    .todo-input{
+        width: 70%;
+        padding: 0.3rem 0.8rem;        
+    }
+    .todo-button{
+        width: 30%;
+        padding: 0.3rem;        
+    }
+}

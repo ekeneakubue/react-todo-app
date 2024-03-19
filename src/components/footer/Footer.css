@@ -1,0 +1,26 @@
+:root{
+    --background-color: #cfcece;
+    --black: #000;
+    --grayish: #5b5959;
+    --light-gray:#777676;
+    --white: #fff;
+    --span-special: #1d05a3;
+}
+
+footer{
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin: 1rem;
+}
+footer span{
+    color: var(--span-special);
+    font-weight: 900;
+    font-size: 12px;
+}
+
+@media(max-width:667px){
+    footer{
+        margin: 5rem;
+    }
+}
