@@ -9,6 +9,8 @@
     --light-gray:#777676;
     --white: #fff;
     --span-special: #1d05a3;
+    --delete: #fc0909;
+    --edit-icon: #038018;
 }
 
 body{
@@ -72,6 +74,12 @@ main{
 .icons{
     display: flex;
     gap: 0.5rem;
+}
+.delete-icon{
+    color: var(--delete);
+}
+.edit-icon{
+    color: var(--edit-icon);
 }
 
 @media(max-width:667px){
